@@ -2,7 +2,7 @@ ASOParadox 1.0
 ==============
 
 AOSParadox would be a ROM based on [Codeaurora sources](https://www.codeaurora.org/cgit/quic/la).
-This 1.0 would be base on Android Lollipop 5.0 (which at the time i'm writing this, isn't realeased)
+This 1.0 would be based on Android Lollipop 5.0 (which at the time i'm writing this, isn't realeased)
 
 The goal of this ROM is to bring an AOSP ROM with graphic customization.
 
