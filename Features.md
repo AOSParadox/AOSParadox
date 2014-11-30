@@ -14,6 +14,6 @@ Here is a list of features :
 - Expandable volume panel
 - Screen recording
 - AppOpsXposed (See the [Xposed Module](http://repo.xposed.info/module/at.jclehner.appopsxposed)
-- Dynamic Status Bar
+- [SLASH]Dynamic Status Bar[/SLASH] 
 - Lockscreen circle indicate the battery
 - ...
