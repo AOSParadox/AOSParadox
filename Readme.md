@@ -1,4 +1,4 @@
-ASOParadox 1.0
+AOSParadox 1.0
 ==============
 
 AOSParadox is a ROM based on [Codeaurora sources](https://www.codeaurora.org/cgit/quic/la).
