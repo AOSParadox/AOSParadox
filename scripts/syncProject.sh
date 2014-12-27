@@ -51,5 +51,13 @@ repo sync -c platform/frameworks/base
 
 repo sync -c platform/vendor/qcom-opensource/bluetooth
 
+repo sync -c platform/vendor/qcom-opensource/kernel-tests
+
 repo sync -c platform/hardware/qcom/audio
+
+repo sync -c platform/hardware/qcom/media
+
+repo sync -c platform/hardware/qcom/wlan
+
+repo sync -c platform/hardware/qcom/display
 

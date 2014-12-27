@@ -157,3 +157,27 @@ git fetch caf $revision
 git checkout $revision
 git push aosparadox $revision && git branch lollipop
 cd $local_path
+cd vendor/qcom/opensource/kernel-tests
+git remote add aosparadox git@github.com:AOSParadox/android_vendor_qcom-opensource_kernel-tests.git
+git fetch caf $revision
+git checkout $revision
+git push aosparadox $revision && git branch lollipop
+cd $local_path
+cd hardware/qcom/media
+git remote add aosparadox git@github.com:AOSParadox/android_hardware_qcom_media.git
+git fetch caf $revision
+git checkout $revision
+git push aosparadox $revision && git branch lollipop
+cd $local_path
+cd hardware/qcom/wlan
+git remote add aosparadox git@github.com:AOSParadox/android_hardware_qcom_wlan.git
+git fetch caf $revision
+git checkout $revision
+git push aosparadox $revision && git branch lollipop
+cd $local_path
+cd hardware/qcom/display
+git remote add aosparadox git@github.com:AOSParadox/android_hardware_qcom_display.git
+git fetch caf $revision
+git checkout $revision
+git push aosparadox $revision && git branch lollipop
+cd $local_path

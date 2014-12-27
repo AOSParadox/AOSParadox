@@ -235,3 +235,39 @@ git checkout lollipop
 git merge --no-ff $revision
 git push aosparadox lollipop
 cd $local_path
+cd hardware/qcom/media
+git fetch caf
+git fetch par
+git checkout -b $revision par/$revision
+git merge lollipop
+git checkout lollipop
+git merge --no-ff $revision
+git push aosparadox lollipop
+cd $local_path
+cd hardware/qcom/wlan
+git fetch caf
+git fetch par
+git checkout -b $revision par/$revision
+git merge lollipop
+git checkout lollipop
+git merge --no-ff $revision
+git push aosparadox lollipop
+cd $local_path
+cd hardware/qcom/display
+git fetch caf
+git fetch par
+git checkout -b $revision par/$revision
+git merge lollipop
+git checkout lollipop
+git merge --no-ff $revision
+git push aosparadox lollipop
+cd $local_path
+cd vendor/qcom/opensource/kernel-tests
+git fetch caf
+git fetch par
+git checkout -b $revision par/$revision
+git merge lollipop
+git checkout lollipop
+git merge --no-ff $revision
+git push aosparadox lollipop
+cd $local_path
