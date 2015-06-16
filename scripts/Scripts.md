@@ -1,4 +1,3 @@
 Here are a bunch of script to push AOSParadox needed repositories from your CAF synced directory
 
-- pushPAR push the stuuf (both ranches to AOSParadox Github)
-- upgradePAR fetch the branch from CodeAurora
+- cafUpdateTool fetch and upload the branches from the repo listed by repoList
