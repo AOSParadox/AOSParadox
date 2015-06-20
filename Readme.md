@@ -6,7 +6,7 @@ This 1.0 is based on Android Lollipop 5.0
 
 The goal of this ROM is to bring an AOSP ROM with graphic customization.
 
-To see the recruitment rules go on [Recruitment](Recruitment.md)
+To see the recruitment rules go on [Recruitment](Recruitment.md) (THIS IS OVER)
 
 To see the features list ideas go on [Features](Features.md)
 
