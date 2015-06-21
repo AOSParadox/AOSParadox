@@ -58,11 +58,13 @@ We will not be stopped by those that put down our project. If a mistake is
 made, then the team will take the fault as a team. We stand by each other.
 
 "Another group of morons. Watch them be the next to be called out for kang."
+Credits to: Davit Batty
 
 BUT, if someone chooses to belittle our project based on assumptions, rumours, etc, 
 we will disregard it and look ahead. We don't do this to prove anything to anyone.
 
 "It says you have to be nice. I guess I'm fucked﻿"
+Credits to: Nick Miltner
 
 There's a certain amount of respect that must be shown. The golden rule to that is
 to "Do to others as you would have them do to you". Before anyone calls me a kanger
@@ -70,6 +72,7 @@ prematurely, this quote is taken from Luke 6:31 NIV. If someone treats you like 
 that does not give you the right to do so back to them.
 
 "I remember these clouns. There all moto g users that don't shut the fuck up. Ever."
+Credits to: Ethan Johnson
 
 Yes, and we will continue to do what we do. I find the above statement funny because
 "Also, got to love the spelling errors BUT guess that goes with the whole (young or not) part :p"
