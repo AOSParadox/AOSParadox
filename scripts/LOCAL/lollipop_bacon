@@ -1,0 +1,4 @@
+device/qcom/msm8974
+device/qcom/common
+hardware/qcom/wlan
+hardware/ril

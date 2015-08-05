@@ -1,0 +1,4 @@
+device/qcom/sepolicy
+system/core
+device/qcom/msm8226
+device/qcom/common

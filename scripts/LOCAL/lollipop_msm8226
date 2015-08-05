@@ -1,0 +1,16 @@
+build/
+device/qcom/sepolicy
+device/qcom/msm8226
+device/qcom/common
+system/core
+system/qcom
+frameworks/base
+packages/apps/Settings
+packages/apps/Camera2
+packages/apps/Dialer
+packages/apps/Mms
+hardware/qcom/bt
+hardware/qcom/audio
+hardware/qcom/display
+hardware/qcom/keymaster
+vendor/qcom/opensource/bluetooth

@@ -1,0 +1,14 @@
+build/
+device/qcom/sepolicy
+device/qcom/msm8974
+device/qcom/common
+system/core
+system/qcom
+frameworks/base
+packages/apps/Settings
+packages/apps/Camera2
+packages/apps/Dialer
+packages/apps/Mms
+hardware/qcom/bt
+hardware/qcom/display
+vendor/qcom/opensource/bluetooth
