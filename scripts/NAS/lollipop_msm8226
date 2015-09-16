@@ -1,12 +1,13 @@
 build/
 device/qcom/common
-device/qcom/msm8974
+device/qcom/msm8226
 device/qcom/sepolicy
 frameworks/base
 hardware/qcom/audio
 hardware/qcom/bt
 hardware/qcom/display
 hardware/qcom/keymaster
+kernel/
 packages/apps/Camera2
 packages/apps/Dialer
 packages/apps/Mms

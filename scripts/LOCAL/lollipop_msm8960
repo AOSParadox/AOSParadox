@@ -1,6 +1,6 @@
 build/
 device/qcom/common
-device/qcom/msm8974
+device/qcom/msm8960
 device/qcom/sepolicy
 frameworks/base
 hardware/qcom/audio
