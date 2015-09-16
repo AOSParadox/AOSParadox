@@ -45,6 +45,11 @@ git remote remove aosparadox
 git remote add aosparadox git@github.com:AOSParadox/android_hardware_qcom_bt.git
 cd /home/louis/Dev/AOSPARADOX_FALCON/
 
+cd hardware/qcom/display
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_hardware_qcom_display.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
 cd hardware/qcom/keymaster
 git remote remove aosparadox
 git remote add aosparadox git@github.com:AOSParadox/android_hardware_qcom_keymaster.git
@@ -60,7 +65,7 @@ git remote remove aosparadox
 git remote add aosparadox git@github.com:AOSParadox/android_hardware_ril.git
 cd /home/louis/Dev/AOSPARADOX_FALCON/
 
-cd kernel/msm
+cd kernel/
 git remote remove aosparadox
 git remote add aosparadox git@github.com:AOSParadox/kernel_msm.git
 cd /home/louis/Dev/AOSPARADOX_FALCON/

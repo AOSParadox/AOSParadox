@@ -2,6 +2,7 @@
 
 revision_msm8226=LA.BF.1.1.1.c5
 revision_msm8974=LA.BF.1.1.1.c4
+revision_msm8960=LA.AF.1.1.1_rb1.17
 revision_newest=LA.BR.1.2.5_rb2.14
 
 function extract_falcon() {

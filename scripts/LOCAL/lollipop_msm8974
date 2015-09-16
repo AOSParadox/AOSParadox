@@ -10,7 +10,7 @@ hardware/qcom/keymaster
 packages/apps/Camera2
 packages/apps/Dialer
 packages/apps/Mms
-packages/app/Settings
+packages/apps/Settings
 system/core
 system/qcom
 vendor/qcom/opensource/bluetooth
