@@ -45,6 +45,8 @@ function extract_msm8226() {
 	git mergetool
 	git commit -a
 	git push aosparadox lollipop_msm8226
+	git checkout -b TMP
+	git branch -D lollipop_msm8226
 	cd /home/louis/Dev/PARADOX_FALCON/
     done
 }
@@ -89,6 +91,8 @@ function extract_msm8974() {
 	git mergetool
 	git commit -a
 	git push aosparadox lollipop_msm8974
+	git checkout -b TMP
+	git branch -D lollipop_msm8974
 	cd /home/louis/Dev/PARADOX_BACON/
     done
 }
@@ -111,6 +115,8 @@ function extract_msm8960() {
 	git mergetool
 	git commit -a
 	git push aosparadox lollipop_msm8960
+	git checkout lollipop_msm8974
+	git branch -D lollipop_msm8960
 	cd /home/louis/Dev/PARADOX_BACON/
     done
 }
