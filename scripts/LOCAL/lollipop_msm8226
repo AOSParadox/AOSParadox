@@ -7,6 +7,7 @@ hardware/qcom/audio
 hardware/qcom/bt
 hardware/qcom/display
 hardware/qcom/keymaster
+packages/apps/Browser
 packages/apps/Camera2
 packages/apps/Dialer
 packages/apps/Mms
