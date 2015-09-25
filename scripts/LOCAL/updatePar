@@ -16,13 +16,13 @@ function extract_falcon() {
 	cd /home/louis/Dev/PARADOX_FALCON/
 	cd $FILE
 	git fetch aosparadox $revision_msm8226
-	git fetch aosparadox lollipop_falcon
-	git branch -D lollipop_falcon
-	git checkout -b lollipop_falcon aosparadox/lollipop_falcon
+	git fetch aosparadox marshmallow_falcon
+	git branch -D marshmallow_falcon
+	git checkout -b marshmallow_falcon aosparadox/marshmallow_falcon
 	git merge aosparadox/$revision_msm8226
 	git mergetool
 	git commit -a
-	git push aosparadox lollipop_falcon
+	git push aosparadox marshmallow_falcon
 	cd /home/louis/Dev/PARADOX_FALCON/
     done
 }
@@ -38,15 +38,15 @@ function extract_msm8226() {
 	cd /home/louis/Dev/PARADOX_FALCON/
 	cd $FILE
 	git fetch aosparadox $revision_msm8226
-	git fetch aosparadox lollipop_msm8226
-	git branch -D lollipop_msm8226
-	git checkout -b lollipop_msm8226 aosparadox/lollipop_msm8226
+	git fetch aosparadox marshmallow_msm8226
+	git branch -D marshmallow_msm8226
+	git checkout -b marshmallow_msm8226 aosparadox/marshmallow_msm8226
 	git merge aosparadox/$revision_msm8226
 	git mergetool
 	git commit -a
-	git push aosparadox lollipop_msm8226
+	git push aosparadox marshmallow_msm8226
 	git checkout -b TMP
-	git branch -D lollipop_msm8226
+	git branch -D marshmallow_msm8226
 	cd /home/louis/Dev/PARADOX_FALCON/
     done
 }
@@ -62,13 +62,13 @@ function extract_bacon() {
 	cd /home/louis/Dev/PARADOX_BACON/
 	cd $FILE
 	git fetch aosparadox $revision_msm8974
-	git fetch aosparadox lollipop_bacon
-	git branch -D lollipop_bacon
-	git checkout -b lollipop_bacon aosparadox/lollipop_bacon
+	git fetch aosparadox marshmallow_bacon
+	git branch -D marshmallow_bacon
+	git checkout -b marshmallow_bacon aosparadox/marshmallow_bacon
 	git merge aosparadox/$revision_msm8974
 	git mergetool
 	git commit -a
-	git push aosparadox lollipop_bacon
+	git push aosparadox marshmallow_bacon
 	cd /home/louis/Dev/PARADOX_BACON/
     done
 }
@@ -84,15 +84,15 @@ function extract_msm8974() {
 	cd /home/louis/Dev/PARADOX_BACON/
 	cd $FILE
 	git fetch aosparadox $revision_msm8974
-	git fetch aosparadox lollipop_msm8974
-	git branch -D lollipop_msm8974
-	git checkout -b lollipop_msm8974 aosparadox/lollipop_msm8974
+	git fetch aosparadox marshmallow_msm8974
+	git branch -D marshmallow_msm8974
+	git checkout -b marshmallow_msm8974 aosparadox/marshmallow_msm8974
 	git merge aosparadox/$revision_msm8974
 	git mergetool
 	git commit -a
-	git push aosparadox lollipop_msm8974
+	git push aosparadox marshmallow_msm8974
 	git checkout -b TMP
-	git branch -D lollipop_msm8974
+	git branch -D marshmallow_msm8974
 	cd /home/louis/Dev/PARADOX_BACON/
     done
 }
@@ -108,15 +108,15 @@ function extract_msm8960() {
 	cd /home/louis/Dev/PARADOX_BACON/
 	cd $FILE
 	git fetch aosparadox $revision_msm8960
-	git fetch aosparadox lollipop_msm8960
-	git branch -D lollipop_msm8960
-	git checkout -b lollipop_msm8960 aosparadox/lollipop_msm8960
+	git fetch aosparadox marshmallow_msm8960
+	git branch -D marshmallow_msm8960
+	git checkout -b marshmallow_msm8960 aosparadox/marshmallow_msm8960
 	git merge aosparadox/$revision_msm8960
 	git mergetool
 	git commit -a
-	git push aosparadox lollipop_msm8960
-	git checkout lollipop_msm8974
-	git branch -D lollipop_msm8960
+	git push aosparadox marshmallow_msm8960
+	git checkout marshmallow_msm8974
+	git branch -D marshmallow_msm8960
 	cd /home/louis/Dev/PARADOX_BACON/
     done
 }
@@ -132,19 +132,19 @@ function extract_common() {
 	cd /home/louis/Dev/PARADOX_FALCON/
 	cd $FILE
 	git fetch aosparadox $revision_newest
-	git fetch aosparadox lollipop_common
-	git branch -D lollipop_common
-	git checkout -b lollipop_common aosparadox/lollipop_common
+	git fetch aosparadox marshmallow_common
+	git branch -D marshmallow_common
+	git checkout -b marshmallow_common aosparadox/marshmallow_common
 	git merge aosparadox/$revision_newest
 	git mergetool
 	git commit -a
-	git push aosparadox lollipop_common
+	git push aosparadox marshmallow_common
 	cd /home/louis/Dev/PARADOX_FALCON/
     done
 }
-extract_falcon /home/louis/Dev/local_aosparadox/UPDATE/lollipop_falcon
-extract_msm8226 /home/louis/Dev/local_aosparadox/UPDATE/lollipop_msm8226
-extract_bacon /home/louis/Dev/local_aosparadox/UPDATE/lollipop_bacon
-extract_msm8974 /home/louis/Dev/local_aosparadox/UPDATE/lollipop_msm8974
-extract_msm8960 /home/louis/Dev/local_aosparadox/UPDATE/lollipop_msm8960
-extract_common /home/louis/Dev/local_aosparadox/UPDATE/lollipop_common
+extract_falcon /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_falcon
+extract_msm8226 /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_msm8226
+extract_bacon /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_bacon
+extract_msm8974 /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_msm8974
+extract_msm8960 /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_msm8960
+extract_common /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_common
