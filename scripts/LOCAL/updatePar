@@ -121,6 +121,28 @@ function extract_msm8960() {
     done
 }
 
+function extract_jflte() {
+    for FILE in `egrep -v '(^#|^$)' $1`; do
+        OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
+        FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
+        DEST=${PARSING_ARRAY[1]}
+        if [ -z $DEST ]; then
+            DEST=$FILE
+        fi
+	cd /home/louis/Dev/PARADOX_BACON/
+	cd $FILE
+	git fetch aosparadox $revision_msm8960
+	git fetch aosparadox lollipop_jflte
+	git branch -D lollipop_jflte
+	git checkout -b lollipop_bacon aosparadox/lollipop_jflte
+	git merge aosparadox/$revision_msm8960
+	git mergetool
+	git commit -a
+	git push aosparadox lollipop_jflte
+	cd /home/louis/Dev/PARADOX_BACON/
+    done
+}
+
 function extract_common() {
     for FILE in `egrep -v '(^#|^$)' $1`; do
         OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
@@ -147,4 +169,5 @@ extract_msm8226 /home/louis/Dev/local_aosparadox/UPDATE/lollipop_msm8226
 extract_bacon /home/louis/Dev/local_aosparadox/UPDATE/lollipop_bacon
 extract_msm8974 /home/louis/Dev/local_aosparadox/UPDATE/lollipop_msm8974
 extract_msm8960 /home/louis/Dev/local_aosparadox/UPDATE/lollipop_msm8960
+extract_bacon /home/louis/Dev/local_aosparadox/UPDATE/lollipop_jflte
 extract_common /home/louis/Dev/local_aosparadox/UPDATE/lollipop_common

@@ -1,6 +1,0 @@
-device/qcom/common
-device/qcom/msm8974
-frameworks/base
-hardware/qcom/wlan
-hardware/qcom/audio
-hardware/ril

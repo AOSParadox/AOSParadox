@@ -4,3 +4,4 @@ frameworks/base
 hardware/qcom/wlan
 hardware/qcom/audio
 hardware/ril
+packages/apps/Settings

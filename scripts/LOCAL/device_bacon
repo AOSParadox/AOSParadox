@@ -1,3 +1,5 @@
+hardware/qcom/wlan
+hardware/ril
 build/
 device/qcom/common
 device/qcom/msm8974
@@ -7,16 +9,10 @@ hardware/qcom/audio
 hardware/qcom/bt
 hardware/qcom/display
 hardware/qcom/keymaster
-hardware/qcom/wlan
-hardware/ril
-kernel/
-packages/apps/Browser
 packages/apps/Camera2
 packages/apps/Dialer
 packages/apps/Mms
-packages/apps/InCallUI
 packages/apps/Settings
 system/core
 system/qcom
 vendor/qcom/opensource/bluetooth
-

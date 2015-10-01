@@ -1,0 +1,59 @@
+#!/bin/bash
+
+function extract_falcon() {
+    for FILE in `egrep -v '(^#|^$)' $1`; do
+        OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
+        FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
+        DEST=${PARSING_ARRAY[1]}
+        if [ -z $DEST ]; then
+            DEST=$FILE
+        fi
+	cd /home/louis/Dev/AOSPARADOX_FALCON/
+	cd $FILE
+	git fetch aosparadox LA.BF.1.1.1.c5
+	git fetch aosparadox lollipop_falcon
+	git fetch aosparadox lollipop_msm8226
+	printf " \n"
+	echo "$FILE # lollipop_falcon" >> /home/louis/CHANGELOG_FALCON
+	git log --no-merges --pretty="%H # %s - %ae" aosparadox/LA.BF.1.1.1.c5...aosparadox/lollipop_falcon >> /home/louis/CHANGELOG_FALCON
+	printf " \n"
+	echo "$FILE # lollipop_msm8226" >> /home/louis/CHANGELOG_FALCON
+	git log --no-merges --pretty="%H # %s - %ae" aosparadox/LA.BF.1.1.1.c5...aosparadox/lollipop_msm8226 >> /home/louis/CHANGELOG_FALCON
+	printf " \n"
+	cd /home/louis/Dev/AOSPARADOX_FALCON/
+    done
+}
+
+
+function extract_bacon() {
+    for FILE in `egrep -v '(^#|^$)' $1`; do
+        OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
+        FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
+        DEST=${PARSING_ARRAY[1]}
+        if [ -z $DEST ]; then
+            DEST=$FILE
+        fi
+	cd /home/louis/Dev/AOSPARADOX_BACON/
+	cd $FILE
+	git fetch aosparadox LA.BF.1.1.1.c4
+	git fetch aosparadox lollipop_bacon
+	git fetch aosparadox lollipop_msm8974
+	printf " \n"
+	echo "$FILE # lollipop_bacon" >> /home/louis/CHANGELOG_BACON
+	git log --no-merges --pretty="%H # %s - %ae" aosparadox/LA.BF.1.1.1.c4...aosparadox/lollipop_bacon >> /home/louis/CHANGELOG_BACON
+	printf " \n"
+	echo "$FILE # lollipop_msm8974" >> /home/louis/CHANGELOG_BACON
+	git log --no-merges --pretty="%H # %s - %ae" aosparadox/LA.BF.1.1.1.c4...aosparadox/lollipop_msm8974 >> /home/louis/CHANGELOG_BACON
+	printf " \n"
+	cd /home/louis/Dev/AOSPARADOX_BACON/
+    done
+}
+
+extract_falcon /home/louis/Dev/local_aosparadox/UPDATE/device_falcon
+extract_bacon /home/louis/Dev/local_aosparadox/UPDATE/device_bacon
+
+egrep -v "codeaurora.org|yordi.derijcke|h2o64|anaskarbila|google.com|sonymobile|lge|libinit|adrianspann33|alexisrico@aospa.co|valters.strods@gmail.com|advanced reboot menu|frap129|luk" /home/louis/CHANGELOG_BACON >> /home/louis/BACON_CHANGES.txt
+egrep -v "codeaurora.org|yordi.derijcke|h2o64|anaskarbila|google.com|sonymobile|lge|libinit|adrianspann33|alexisrico@aospa.co|valters.strods@gmail.com|advanced reboot menu|frap129|luk" /home/louis/CHANGELOG_FALCON >> /home/louis/FALCON_CHANGES.txt
+
+rm /home/louis/CHANGELOG_BACON
+rm /home/louis/CHANGELOG_FALCON
