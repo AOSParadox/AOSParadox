@@ -25,6 +25,22 @@ git remote remove aosparadox
 git remote add aosparadox git@github.com:AOSParadox/android_device_qcom_msm8960.git
 cd /home/louis/Dev/AOSPARADOX_FALCON/
 
+cd device/qcom/msm8916
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_device_qcom_msm8916.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd device/qcom/msm8916_32
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_device_qcom_msm8916_32.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd device/qcom/msm8916_64
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_device_qcom_msm8916_64.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+
 cd device/qcom/sepolicy
 git remote remove aosparadox
 git remote add aosparadox git@github.com:AOSParadox/android_device_qcom_sepolicy.git
