@@ -72,5 +72,4 @@ function extract_common() {
 extract_8226 marshmallow_msm8226
 extract_8974 marshmallow_msm8974
 extract_8960 marshmallow_msm8960
-extract_8974 marshmallow_bacon
 extract_common marshmallow_common

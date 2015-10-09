@@ -8,7 +8,7 @@ We want to make 100% profit from what CAF give us.
 *What are the consequences ?*
 Of course, as it is an opensource project, anyone can fork it and make his modifications on top of it.
 HOWEVER, any publicly released based ROM need our agreement before beeing released.
-We most likely will always allow any porting project AS FAR AS ou respected the ROM principes that I'll enumerate right now :
+We most likely will always allow any porting project AS FAR AS you respected the ROM principes that I'll enumerate right now :
 - keep the overlay mentality (1 phone tree, the CAF chipset tree, the QCOM common tree and NO 3 phones tree + QCOM common tree)
 - keep a clear and nice commit history
 - keep the AOSP spirit (no "big" changes such as SlimLauncher, OmniGears, OmniSwitch, ...)

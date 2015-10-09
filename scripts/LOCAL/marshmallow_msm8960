@@ -9,6 +9,7 @@ packages/apps/Browser
 packages/apps/Camera2
 packages/apps/Dialer
 packages/apps/Mms
+packages/apps/InCallUI
 packages/apps/Settings
 system/core
 system/qcom

@@ -150,3 +150,13 @@ git remote remove aosparadox
 git remote add aosparadox git@github.com:AOSParadox/android_vendor_qcom_opensource_bluetooth.git
 cd /home/louis/Dev/AOSPARADOX_FALCON/
 
+cd frameworks/opt/telephony
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_frameworks_opt_telephony.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd packages/apps/InCallUI
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_packages_apps_InCallUI.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
