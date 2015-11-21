@@ -1,9 +1,7 @@
 #!/bin/bash
 
-revision_msm8226=LA.BF.1.1.1.c5
-revision_msm8974=LA.BF.1.1.1.c4
-revision_msm8960=LA.AF.1.1.1_rb1.17
-revision_newest=LA.BR.1.2.5_rb2.14
+revision_msm8226=LA.BF.1.1.3_rb1.4
+revision_msm8974=LA.BF.1.1.3_rb1.4
 
 function extract_falcon() {
     for FILE in `egrep -v '(^#|^$)' $1`; do
@@ -97,77 +95,8 @@ function extract_msm8974() {
     done
 }
 
-function extract_msm8960() {
-    for FILE in `egrep -v '(^#|^$)' $1`; do
-        OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
-        FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
-        DEST=${PARSING_ARRAY[1]}
-        if [ -z $DEST ]; then
-            DEST=$FILE
-        fi
-	cd /home/louis/Dev/PARADOX_BACON/
-	cd $FILE
-	git fetch aosparadox $revision_msm8960
-	git fetch aosparadox marshmallow_msm8960
-	git branch -D marshmallow_msm8960
-	git checkout -b marshmallow_msm8960 aosparadox/marshmallow_msm8960
-	git merge aosparadox/$revision_msm8960
-	git mergetool
-	git commit -a
-	git push aosparadox marshmallow_msm8960
-	git checkout marshmallow_msm8974
-	git branch -D marshmallow_msm8960
-	cd /home/louis/Dev/PARADOX_BACON/
-    done
-}
 
-function extract_jflte() {
-    for FILE in `egrep -v '(^#|^$)' $1`; do
-        OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
-        FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
-        DEST=${PARSING_ARRAY[1]}
-        if [ -z $DEST ]; then
-            DEST=$FILE
-        fi
-	cd /home/louis/Dev/PARADOX_BACON/
-	cd $FILE
-	git fetch aosparadox $revision_msm8960
-	git fetch aosparadox marshmallow_jflte
-	git branch -D marshmallow_jflte
-	git checkout -b marshmallow_bacon aosparadox/marshmallow_jflte
-	git merge aosparadox/$revision_msm8960
-	git mergetool
-	git commit -a
-	git push aosparadox marshmallow_jflte
-	cd /home/louis/Dev/PARADOX_BACON/
-    done
-}
-
-function extract_common() {
-    for FILE in `egrep -v '(^#|^$)' $1`; do
-        OLDIFS=$IFS IFS=":" PARSING_ARRAY=($FILE) IFS=$OLDIFS
-        FILE=`echo ${PARSING_ARRAY[0]} | sed -e "s/^-//g"`
-        DEST=${PARSING_ARRAY[1]}
-        if [ -z $DEST ]; then
-            DEST=$FILE
-        fi
-	cd /home/louis/Dev/PARADOX_FALCON/
-	cd $FILE
-	git fetch aosparadox $revision_newest
-	git fetch aosparadox marshmallow_common
-	git branch -D marshmallow_common
-	git checkout -b marshmallow_common aosparadox/marshmallow_common
-	git merge aosparadox/$revision_newest
-	git mergetool
-	git commit -a
-	git push aosparadox marshmallow_common
-	cd /home/louis/Dev/PARADOX_FALCON/
-    done
-}
-extract_falcon /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_falcon
-extract_msm8226 /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_msm8226
-extract_bacon /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_bacon
-extract_msm8974 /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_msm8974
-extract_msm8960 /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_msm8960
-extract_bacon /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_jflte
-extract_common /home/louis/Dev/local_aosparadox/UPDATE/marshmallow_common
+extract_falcon /home/louis/Dev/local_aosparadox/UPDATE/falcon/marshmallow_falcon
+extract_msm8226 /home/louis/Dev/local_aosparadox/UPDATE/falcon/marshmallow_msm8226
+extract_bacon /home/louis/Dev/local_aosparadox/UPDATE/bacon/marshmallow_bacon
+extract_msm8974 /home/louis/Dev/local_aosparadox/UPDATE/bacon/marshmallow_msm8974

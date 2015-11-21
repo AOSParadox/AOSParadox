@@ -1,0 +1,12 @@
+build
+device/qcom/sepolicy
+external/boringssl
+frameworks/support
+hardware/qcom/bt
+hardware/qcom/display
+packages/apps/Bluetooth
+packages/apps/Mms
+packages/apps/PackageInstaller
+system/core
+system/qcom
+vendor/qcom/opensource/bluetooth

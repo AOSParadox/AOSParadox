@@ -176,3 +176,42 @@ git remote remove aosparadox
 git remote add aosparadox git@github.com:AOSParadox/android_packages_apps_InCallUI.git
 cd /home/louis/Dev/AOSPARADOX_FALCON/
 
+cd external/boringssl
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_external_boringssl.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd frameworks/support
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_frameworks_support.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd packages/apps/Bluetooth
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_packages_apps_Bluetooth.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd packages/apps/PackageInstaller
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_packages_apps_PackageInstaller.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd external/libnfc-nci
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_external_libnfc-nci.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd frameworks/av
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_frameworks_av.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd vendor/qcom/opensource/wlan/prima
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/prima.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd frameworks/native
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_frameworks_native.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/
