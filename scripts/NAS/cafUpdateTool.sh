@@ -14,7 +14,7 @@ function extract_8974() {
 	git fetch caf $revision_msm8974
 	git checkout -b $revision_msm8974 caf/$revision_msm8974
 	git push aosparadox $revision_msm8974
-	cd /home/nas/EXTRA/CAF/
+	cd /home/louis/PARADOX/CAF/
     done
 }
 
