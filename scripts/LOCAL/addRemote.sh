@@ -215,3 +215,8 @@ cd frameworks/native
 git remote remove aosparadox
 git remote add aosparadox git@github.com:AOSParadox/android_frameworks_native.git
 cd /home/louis/Dev/AOSPARADOX_FALCON/
+
+cd vendor/qcom/opensource/softap/
+git remote remove aosparadox
+git remote add aosparadox git@github.com:AOSParadox/android_system_qcom.git
+cd /home/louis/Dev/AOSPARADOX_FALCON/

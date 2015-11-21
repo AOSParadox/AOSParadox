@@ -22,5 +22,5 @@ packages/apps/Mms
 packages/apps/PackageInstaller
 packages/apps/Settings
 system/core
-system/qcom
+vendor/qcom/opensource/softap/
 vendor/qcom/opensource/bluetooth
