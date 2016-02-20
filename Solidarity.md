@@ -27,11 +27,11 @@ it too? Our point is not to discourage those with titles already.
 **What must you know already?**
 
 You need to ..
-- be able to communicate through Hangouts
-- have a [Github](github.com) Account
-- know how to push/pull/merge on git
-- have a linux distro installed
-- basic knowledge of how Android runs
+* be able to communicate through Hangouts
+* have a [Github](github.com) Account
+* know how to push/pull/merge on git
+* have a linux distro installed
+* basic knowledge of how Android runs
 
 ==============================================================================================
 
@@ -82,7 +82,7 @@ Like, make your vision clearer. Fuck assholes who think they can dev and but can
 fun of learning and teaching others. That's what I do. When someone comes at you like he did, remind 
 them that this is a group for learning, and that means cherry-picking, merging features, etc. 
 No one has ever learned android development without doing these simple things. As long as credit 
-is given, it's none of his Fucking business." - a Recognized Developer
+is given, it's none of his Fucking business." * a Recognized Developer
 
 And lastly, we must give credit for the above quotes right? Yeah, we probably should.
 

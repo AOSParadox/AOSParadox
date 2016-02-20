@@ -1,6 +1,0 @@
-device/qcom/common
-device/qcom/msm8226
-device/qcom/sepolicy
-hardware/qcom/audio
-hardware/qcom/keymaster
-frameworks/native
