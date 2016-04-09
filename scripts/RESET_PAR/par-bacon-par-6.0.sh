@@ -8,7 +8,7 @@ function extract() {
         if [ -z $DEST ]; then
             DEST=$FILE
         fi
-	cd /home/louis/WORK/AOSPARADOX_FALCON/
+	cd /home/louis/WORK/AOSPARADOX_BACON/
 	cd $FILE
 	git fetch caf LA.BF.1.1.3_rb1.10
 	git fetch aosparadox bacon-par-6.0
@@ -17,7 +17,7 @@ function extract() {
 	git branch -D bacon-par-6.0
 	git checkout -b bacon-par-6.0
 	git branch -D tmp
-	cd /home/louis/WORK/AOSPARADOX_FALCON/
+	cd /home/louis/WORK/AOSPARADOX_BACON/
     done
 }
 
